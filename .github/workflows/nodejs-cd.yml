@@ -29,6 +29,6 @@ jobs:
             cd ~/apps/ga-ci-cd-nodejs
             git pull origin master
             git status
-            npm install --only=prod
+            npm i --only=prod
             pm2 restart MilanApp
     
