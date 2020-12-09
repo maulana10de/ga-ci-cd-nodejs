@@ -27,6 +27,8 @@ jobs:
           port: 22
           script: |
             cd ~/apps/ga-ci-cd-nodejs
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
             git pull origin master
             git status
             npm i --only=prod
